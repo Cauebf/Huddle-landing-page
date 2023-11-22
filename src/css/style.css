@@ -1,0 +1,100 @@
+body {
+    background: hsl(257, 40%, 49%) url(../images/bg-desktop.svg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "container-left container-right";
+    grid-template-columns: 1fr 1fr;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-left {
+    grid-area: container-left;
+    padding: 50px 0 100px 100px;
+}
+
+.container-left .logo {
+    width: 280px;
+    margin-bottom: 100px;
+}
+
+.container-right {
+    grid-area: container-right;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+    position: relative;
+}
+
+.container-right .about h1 {
+    font-size: 50px;
+    padding: 20px 0;
+    max-width: 600px;
+}
+
+.container-right .about p {
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+
+.container-right .about .register {
+    background-color: #fff;
+    font-size: 25px;
+    padding: 15px 80px;
+    border-radius: 50px;
+    color: hsl(257, 40%, 49%, 0.9);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.container-right .about .register:hover {
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.container-right .social {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+
+.container-right .social a {
+    font-size: 25px;
+    color: #fff;
+    border: #fff solid 2px;
+    border-radius: 50%;
+    padding: 10px 7px 10px 15px;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.container-right .social a:first-child {
+    padding: 10px 12px 10px 20px;
+}
+
+.container-right .social a:last-child {
+    padding: 10px 17px;
+}
+
+.container-right .social a:hover {
+    color: hsl(300, 69%, 60%);
+    border: hsl(300, 69%, 60%) solid 2px;
+}
+
+.container-right .register,h1 {
+    font-family: 'Poppins', sans-serif;
+}
